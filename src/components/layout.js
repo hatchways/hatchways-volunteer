@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Hero from "./hero"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,7 +26,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        createProjectText={"Create a project"}
+      />
+      <Hero
+        headerText={"COVID-19 projects looking for volunteers."}
+        description={`New or established projects helping with the COVID-19 crisis that need help. Volunteer yourself or create a new one.`}
+      />
       <div
         style={{
           margin: `0 auto`,
