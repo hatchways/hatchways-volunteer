@@ -5,6 +5,7 @@ module.exports = {
     author: `@hatchways`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,7 +22,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
