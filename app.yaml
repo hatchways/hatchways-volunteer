@@ -1,9 +1,9 @@
 runtime: python37
 
 handlers:
-  - url: /(.+)/?
+  - url: /(.*)/?
     static_files: public/\1/index.html
-    upload: public/(.+)/index.html
+    upload: public/(.*)/index.html
     expiration: "1s"
 
   - url: /(.+)
