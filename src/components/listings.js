@@ -23,6 +23,7 @@ const Listings = ({}) => {
       allVolunteerListingsJson {
         edges {
           node {
+            id
             title
             description
             location
@@ -55,7 +56,12 @@ const Listings = ({}) => {
             </p>
             <div style={{ color: `#46B2A2` }}>
               <FontAwesomeIcon icon={faMapMarkerAlt} /> {listing.node.location}
-              <Link to={listing.node.title}>Link</Link>
+              <Link
+                to={`/project/${listing.node.id}`}
+                style={{ paddingLeft: 10 }}
+              >
+                Read more
+              </Link>
             </div>
           </Post>
         ))}
@@ -63,15 +69,5 @@ const Listings = ({}) => {
     </div>
   )
 }
-
-// Hero.propTypes = {
-//   headerText: PropTypes.string,
-//   description: PropTypes.string,
-// }
-
-// Hero.defaultProps = {
-//   headerText: ``,
-//   description: ``,
-// }
 
 export default Listings

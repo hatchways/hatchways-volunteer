@@ -29,7 +29,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const project = edge.node
 
     actions.createPage({
-      path: `/projecto/${project.id}`,
+      path: `/project/${project.id}`,
       component: require.resolve("./src/templates/project.js"),
       context: {
         projectId: project.id,

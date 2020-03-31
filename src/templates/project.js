@@ -35,6 +35,9 @@ export const query = graphql`
           members
           tasks
           documentation
+          numOfVolunteers
+          contact
+          type
         }
       }
     }
@@ -57,7 +60,10 @@ const Character = ({ data }) => {
           </div>
 
           <div className="join-project">
-            <HoverText target="_blank" href="#">
+            <HoverText
+              target="_blank"
+              href="https://forms.gle/eq2d7ctbeyrRdNAz9"
+            >
               Join the project
             </HoverText>
           </div>
@@ -81,7 +87,11 @@ const Character = ({ data }) => {
 
           <div className="row">
             <div className="field">Demo, mockups, or documentation</div>
-            <div className="field-content">{project.documentation}</div>
+            <div className="field-content">
+              <a href={`${project.documentation}`} target="_blank">
+                Link
+              </a>
+            </div>
           </div>
 
           <div className="row">
@@ -91,6 +101,36 @@ const Character = ({ data }) => {
                 {project.tasks && project.tasks.map(task => <li>{task}</li>)}
               </ul>
             </div>
+          </div>
+
+          <div className="row">
+            <div className="field">Number of Volunteers</div>
+            <div className="field-content">{project.numOfVolunteers}</div>
+          </div>
+
+          <div className="row">
+            <div className="field">Location</div>
+            <div className="field-content">{project.location}</div>
+          </div>
+
+          <div className="row">
+            <div className="field">How to get in touch</div>
+            <div className="field-content">{project.contact}</div>
+          </div>
+
+          <div className="row">
+            <div className="field">Skills needed</div>
+            <div className="field-content">
+              <ul>
+                {project.skills &&
+                  project.skills.map(skill => <li>{skill}</li>)}
+              </ul>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="field">Project type</div>
+            <div className="field-content">{project.type}</div>
           </div>
         </div>
       </div>
