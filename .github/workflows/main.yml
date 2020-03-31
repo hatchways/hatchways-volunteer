@@ -51,4 +51,4 @@ jobs:
 
       - name: Deploy
         run: |
-          gcloud run deploy --project hatchways-volunteer
+          gcloud app deploy --project hatchways-volunteer
