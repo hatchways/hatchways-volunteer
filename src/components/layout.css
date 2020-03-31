@@ -13,6 +13,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #efefef;
 }
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
 article,
 aside,
 details,
@@ -47,6 +53,8 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #46b2a2;
+  font-weight: 600;
 }
 a:active,
 a:hover {
