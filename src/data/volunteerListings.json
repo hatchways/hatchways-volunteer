@@ -3,7 +3,7 @@
     "id": "skillsmarketplace",
     "title": "Skills marketplace for COVID-19",
     "description": "A two-sided marketplace for skills that can be utilized during this self-isolation and online-only period! People can submit their skills and services for others to browse through and purchase. Examples could include: online guitar lessons, online language lessons, digital marketing, designing a logo, copywriting, video editing, online tutoring for your kids, etc. Those purchasing the skills/ services could be working individuals who’d like to learn something new, who would like help with training and teaching their kids or those who need extra skills to build up their businesses.",
-    "members": [""],
+    "members": ["Brian", "Zeinab", "Evan"],
     "progress": "Current building MVP",
     "documentation": "https://docs.google.com/document/d/19NgluWJ3xgsBaI9wFifecUgmt9cCPifYgyuCRoxzLRk/edit?usp=sharing",
     "tasks": [
@@ -14,22 +14,25 @@
     "numOfVolunteers": "1-5",
     "location": "Toronto/Remote",
     "contact": "jaclyn@hatchways.io",
-    "skills": ["Full-stack Developers"],
+    "skills": ["Full-stack developers"],
     "type": ""
   },
 
   {
-    "id": "covidproject",
-    "title": "Covid project to help relieve symptoms",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue sem, gravida non lorem sed, lobortis mattis diam. Mauris hendrerit ultricies pharetra. Sed elementum, ligula eu imperdiet eleifend, dolor est vehicula nibh, ultrices lobortis magna sapien sit amet libero. Pellentesque lobortis libero erat, sed ultrices est volutpat sit amet. Curabitur et interdum dui. Vivamus placerat imperdiet finibus. In vel sodales eros. Phasellus feugiat pulvinar libero id gravida. Morbi non sapien leo. Morbi eu dui tincidunt, pulvinar velit non, pulvinar est.",
-    "members": ["Bonnie"],
-    "progress": "",
-    "documentation": "",
-    "tasks": [""],
-    "numOfVolunteers": "1-10",
-    "location": "Remote",
+    "id": "lovelocals",
+    "title": "LoveLocals",
+    "description": "Coronavirus is a global public health crisis that is affecting all corners of the population and economy in different ways. Local businesses are the cornerstone of our communities, where we gather to celebrate, to connect, to conduct business and to eat some great food! Support your favourite local restaurants by buying gift cards now that will help business owners stay afloat.",
+    "members": ["Bonnie", "Madison"],
+    "progress": "Building the MVP",
+    "documentation": "https://docs.google.com/document/d/1vtYWtBGkKKEX3vIUXvdbhJSDqv4rtSsAM5v7Pi4F9DM/edit?usp=sharing",
+    "tasks": [
+      "Scraping for restaurants and data for gift cards and other ways to support the businesses",
+      "Scale the project so that it could be for any city/region"
+    ],
+    "numOfVolunteers": "1-3",
+    "location": "Toronto/Remote",
     "contact": "bonnie@hatchways.io",
-    "skills": ["PM", "Marketting"],
+    "skills": ["Full-stack developers", "UI/UX Designers"],
     "type": ""
   }
 ]

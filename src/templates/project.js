@@ -46,7 +46,6 @@ export const query = graphql`
 
 const Character = ({ data }) => {
   const project = data.allVolunteerListingsJson.edges[0].node
-  console.log(project)
 
   return (
     <Layout>
