@@ -1,9 +1,9 @@
 import { Link, useStaticQuery, graphql } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
+import Hero from "./hero"
 
 const Post = styled.li`
   background-color: white;
@@ -32,21 +32,35 @@ const Listings = ({}) => {
     }
   `)
 
-  console.log(data)
   return (
-    <ul style={{ margin: `20px 0`, padding: 0 }}>
-      {data.allVolunteerListingsJson.edges.map(listing => (
-        <Post>
-          <PostTitle>{listing.node.title}</PostTitle>
-          <p style={{ lineHeight: `1.5rem`, margin: `16px 0` }}>
-            {listing.node.description}
-          </p>
-          <div style={{ color: `#46B2A2` }}>
-            <FontAwesomeIcon icon={faMapMarkerAlt} /> {listing.node.location}
-          </div>
-        </Post>
-      ))}
-    </ul>
+    <div>
+      <Hero
+        headerText={"COVID-19 projects looking for volunteers."}
+        description={`New or established projects helping with the COVID-19 crisis that need help. Volunteer yourself or create a new one.`}
+      />
+
+      <ul
+        style={{
+          margin: `20px auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+          padding: 0,
+        }}
+      >
+        {data.allVolunteerListingsJson.edges.map(listing => (
+          <Post>
+            <PostTitle>{listing.node.title}</PostTitle>
+            <p style={{ lineHeight: `1.5rem`, margin: `16px 0` }}>
+              {listing.node.description}
+            </p>
+            <div style={{ color: `#46B2A2` }}>
+              <FontAwesomeIcon icon={faMapMarkerAlt} /> {listing.node.location}
+              <Link to={listing.node.title}>Link</Link>
+            </div>
+          </Post>
+        ))}
+      </ul>
+    </div>
   )
 }
 

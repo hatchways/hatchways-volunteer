@@ -1,11 +1,12 @@
 [
   {
+    "id": "givingtree",
     "title": "Giving Tree",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue sem, gravida non lorem sed, lobortis mattis diam. Mauris hendrerit ultricies pharetra. Sed elementum, ligula eu imperdiet eleifend, dolor est vehicula nibh, ultrices lobortis magna sapien sit amet libero. Pellentesque lobortis libero erat, sed ultrices est volutpat sit amet. Curabitur et interdum dui. Vivamus placerat imperdiet finibus. In vel sodales eros. Phasellus feugiat pulvinar libero id gravida. Morbi non sapien leo. Morbi eu dui tincidunt, pulvinar velit non, pulvinar est.",
-    "team": [],
+    "members": [""],
     "progress": "",
     "documentation": "",
-    "tasks": [],
+    "tasks": ["Share it on social media"],
     "numOfVolunteers": "1-10",
     "location": "Remote",
     "contact": "bonnie@hatchways.io",
@@ -14,12 +15,13 @@
   },
 
   {
+    "id": "covidproject",
     "title": "Covid project to help relieve symptoms",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue sem, gravida non lorem sed, lobortis mattis diam. Mauris hendrerit ultricies pharetra. Sed elementum, ligula eu imperdiet eleifend, dolor est vehicula nibh, ultrices lobortis magna sapien sit amet libero. Pellentesque lobortis libero erat, sed ultrices est volutpat sit amet. Curabitur et interdum dui. Vivamus placerat imperdiet finibus. In vel sodales eros. Phasellus feugiat pulvinar libero id gravida. Morbi non sapien leo. Morbi eu dui tincidunt, pulvinar velit non, pulvinar est.",
-    "team": [],
+    "members": ["Bonnie"],
     "progress": "",
     "documentation": "",
-    "tasks": [],
+    "tasks": [""],
     "numOfVolunteers": "1-10",
     "location": "Remote",
     "contact": "bonnie@hatchways.io",

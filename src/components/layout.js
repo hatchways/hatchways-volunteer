@@ -30,17 +30,8 @@ const Layout = ({ children }) => {
         siteTitle={data.site.siteMetadata.title}
         createProjectText={"Create a project"}
       />
-      <Hero
-        headerText={"COVID-19 projects looking for volunteers."}
-        description={`New or established projects helping with the COVID-19 crisis that need help. Volunteer yourself or create a new one.`}
-      />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+
+      <div>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

@@ -1,0 +1,39 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-container {
+  background-color: white;
+  padding: 50px;
+  margin: 20px;
+  display: flex;
+}
+
+.content-container {
+  background-color: white;
+  padding: 50px;
+  margin: 0 20px;
+}
+
+.header {
+  flex-grow: 2;
+}
+
+.join-project {
+  width: 300px;
+  text-align: right;
+}
+
+.row {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.field {
+  min-width: 200px;
+  max-width: 200px;
+  padding-right: 30px;
+  color: #46b2a2;
+  font-weight: 600;
+}

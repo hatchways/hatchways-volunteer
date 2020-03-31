@@ -3,10 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-const HoverText = styled(Link)`
+const HoverText = styled.a`
   text-transform: uppercase;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 16px;
   border: 1px solid #fd5a25;
   color: #fd5a25;
   border-radius: 5px;
@@ -31,7 +31,7 @@ const Header = ({ siteTitle, createProjectText }) => (
         display: `flex`,
       }}
     >
-      <h2 style={{ margin: 0, flexGrow: `2` }}>
+      <h2 style={{ margin: 0, flexGrow: `2`, lineHeight: "50px" }}>
         <Link
           to="/"
           style={{
@@ -43,7 +43,11 @@ const Header = ({ siteTitle, createProjectText }) => (
         </Link>
       </h2>
 
-      <HoverText to="https://forms.gle/fSbtrp545EuRguyZ7">
+      <HoverText
+        href="https://forms.gle/fSbtrp545EuRguyZ7"
+        target="_blank"
+        rel="noopener norefferer"
+      >
         {createProjectText}
       </HoverText>
     </div>
