@@ -17,7 +17,7 @@ const PostTitle = styled.h3`
   margin-bottom: 16px;
 `
 
-const Listings = ({}) => {
+const Listings = () => {
   const data = useStaticQuery(graphql`
     query VolunterListingsQuery {
       allVolunteerListingsJson {
@@ -44,7 +44,6 @@ const Listings = ({}) => {
         style={{
           margin: `20px auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
           padding: 0,
         }}
       >

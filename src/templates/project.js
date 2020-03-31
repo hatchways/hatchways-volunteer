@@ -61,6 +61,7 @@ const Character = ({ data }) => {
           <div className="join-project">
             <HoverText
               target="_blank"
+              rel="noopener noreferrer"
               href="https://forms.gle/eq2d7ctbeyrRdNAz9"
             >
               Join the project
@@ -87,7 +88,11 @@ const Character = ({ data }) => {
           <div className="row">
             <div className="field">Demo, mockups, or documentation</div>
             <div className="field-content">
-              <a href={`${project.documentation}`} target="_blank">
+              <a
+                href={`${project.documentation}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Link
               </a>
             </div>
