@@ -5,6 +5,7 @@ import "./project.css"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css" // Import the CSS
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 

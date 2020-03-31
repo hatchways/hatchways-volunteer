@@ -9,17 +9,12 @@ handlers:
     static_files: public/index.html
     secure: always
 
-  # - url: /(.*\.(!html))
-  #   static_files: public/\1
-  #   upload: public/(.*\.(!html))
-  #   secure: always
-
   - url: /(.*\.(!html))
     static_files: public/\1
     upload: public/(.*\.(!html))
     secure: always
 
-  - url: /(.+)/?
+  - url: /(.+)/
     static_files: public/\1/index.html
     upload: public/(.+)/index.html
     http_headers:
@@ -27,7 +22,10 @@ handlers:
     expiration: "1s"
     secure: always
 
-  - url: /.*
+  - url: /(.+)
+    static_files: public/\1/index.html
+    upload: public/(.+)/index.html
+    http_headers:
+      X-Frame-Options: DENY
+    expiration: "1s"
     secure: always
-    redirect_http_response_code: 301
-    script: auto
