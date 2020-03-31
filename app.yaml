@@ -1,4 +1,5 @@
 runtime: python37
+version: 1
 
 handlers:
   - url: /
