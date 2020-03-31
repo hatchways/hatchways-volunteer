@@ -56,7 +56,7 @@ const Listings = () => {
             <div style={{ color: `#46B2A2` }}>
               <FontAwesomeIcon icon={faMapMarkerAlt} /> {listing.node.location}
               <Link
-                to={`/project/${listing.node.id}`}
+                to={`/project/${listing.node.id}/index.html`}
                 style={{ paddingLeft: 10 }}
               >
                 Read more
