@@ -4,8 +4,11 @@ import Layout from "../components/layout"
 import "./project.css"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { config } from "@fortawesome/fontawesome-svg-core"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
+
+config.autoAddCss = false
 
 const HoverText = styled.a`
   text-transform: uppercase;

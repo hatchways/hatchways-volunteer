@@ -2,8 +2,11 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { config } from "@fortawesome/fontawesome-svg-core"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import Hero from "./hero"
+
+config.autoAddCss = false
 
 const Post = styled.li`
   background-color: white;
