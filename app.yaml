@@ -2,15 +2,4 @@ runtime: python37
 
 handlers:
   - url: /
-    upload: public/index.html
-    expiration: "1s"
-    http_headers:
-      X-Frame-Options: DENY
-    static_files: public/index.html
-    secure: always
-
-  - url: /(.*)
-    static_files: public/\1
-    upload: public/.*
-    expiration: "100d"
-    secure: always
+    static_dir: public/
