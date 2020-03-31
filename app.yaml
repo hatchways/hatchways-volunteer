@@ -1,5 +1,17 @@
 runtime: python37
 
+skip_files:
+  - ^(.*/)?#.*#$
+  - ^(.*/)?.*~$
+  - ^(.*/)?.*\.py[co]$
+  - ^(.*/)?.*/RCS/.*$
+  - ^(.*/)?\..*$
+  - ^test$
+  - .git
+  - src/*
+  - node_modules/*
+  - plugins/*
+
 handlers:
   - url: /
     upload: public/index.html
