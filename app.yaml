@@ -9,16 +9,25 @@ handlers:
     static_files: public/index.html
     secure: always
 
-  - url: /(.*\.(bmp|gif|ico|jpeg|jpg|png|json|js|map|webmanifest|css))
+  # - url: /(.*\.(!html))
+  #   static_files: public/\1
+  #   upload: public/(.*\.(!html))
+  #   secure: always
+
+  - url: /(.*\.(!html))
     static_files: public/\1
-    upload: public/(.*\.(bmp|gif|ico|jpeg|jpg|png|json|js|map|webmanifest|css))
-    expiration: "100d"
+    upload: public/(.*\.(!html))
     secure: always
 
-  - url: /(.+)
+  - url: /(.+)/?
     static_files: public/\1/index.html
     upload: public/(.+)/index.html
     http_headers:
       X-Frame-Options: DENY
     expiration: "1s"
     secure: always
+
+  - url: /.*
+    secure: always
+    redirect_http_response_code: 301
+    script: auto
