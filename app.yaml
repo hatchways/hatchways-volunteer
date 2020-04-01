@@ -9,8 +9,23 @@ handlers:
     static_files: public/index.html
     secure: always
 
-  - url: /(.*)
+  - url: /(.*\.(!html))
     static_files: public/\1
-    upload: public/.*
-    expiration: "100d"
+    upload: public/(.*\.(!html))
+    secure: always
+
+  - url: /(.+)/
+    static_files: public/\1/index.html
+    upload: public/(.+)/index.html
+    http_headers:
+      X-Frame-Options: DENY
+    expiration: "1s"
+    secure: always
+
+  - url: /(.+)
+    static_files: public/\1/index.html
+    upload: public/(.+)/index.html
+    http_headers:
+      X-Frame-Options: DENY
+    expiration: "1s"
     secure: always
