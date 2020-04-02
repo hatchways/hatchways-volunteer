@@ -34,5 +34,24 @@
     "contact": "bonnie@hatchways.io",
     "skills": ["Full-stack developers", "UI/UX Designers"],
     "type": ""
+  },
+
+  {
+    "id": "socialplatform",
+    "title": "Social appreciation site to COVID19 workers",
+    "description": "Upload a picture, a video or a piece of text to thank our workers! Direct it at a specific person, a specific grocery store or hospital in your area :) Most of the posts so far have been on Instagram stories or tweets etc. but these workers aren’t likely seeing them/ able to access. These posts will be a permanent public feed for anyone to view at any time!",
+    "members": [" "],
+    "progress": "Building the MVP",
+    "documentation": "https://docs.google.com/document/d/1Dw7cc97f-eZHLVsxvQoJTqCZIdpPzWTVAjg92XkCPeI/edit?usp=sharing",
+    "tasks": [
+      "Design/ UI for the website",
+      "Front-end + back-end development of the marketplace",
+      "Digital/ social media marketing to help get the word out! "
+    ],
+    "numOfVolunteers": "1-5",
+    "location": "Toronto/Remote",
+    "contact": "jaclyn@hatchways.io",
+    "skills": ["Full-stack developers"],
+    "type": ""
   }
 ]
