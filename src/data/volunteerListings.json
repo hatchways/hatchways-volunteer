@@ -53,5 +53,20 @@
     "contact": "jaclyn@hatchways.io",
     "skills": ["Full-stack developers"],
     "type": ""
+  },
+
+  {
+    "id": "amplelabs",
+    "title": "Ample Labs: COVID-19 Response Fund",
+    "description": "In light of COVID-19 Response, we’ve set-up a COVID-19 Response Fund with the goal of focusing on building products and value within our product to help our end-users at this critical time. People facing homelessness have two times the risk of infection. which also puts social workers, and frontline workers at risk. We need to limit the spread ASAP.",
+    "members": [" "],
+    "progress": "",
+    "documentation": "https://www.amplelabs.co/covid-19-response-fund/",
+    "tasks": ["More information in the documentation/website"],
+    "numOfVolunteers": "N/A",
+    "location": "Remote",
+    "contact": "covidchatbot@amplelabs.co",
+    "skills": ["Full-stack developers", "More info on the website"],
+    "type": ""
   }
 ]
